@@ -98,4 +98,15 @@
     font-size: 14px;
     line-height: 20px;
   }
+}
+@media screen and (min-width: 1024px) {
+  .footer__last-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .footer__social-links {
+    position: relative;
+    top: 0;
+  }
 }/*# sourceMappingURL=footer.css.map */

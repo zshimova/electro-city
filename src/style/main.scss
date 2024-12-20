@@ -23,7 +23,9 @@
 }
 
 .container {
-    margin: 0 10px;
+    margin: 0 auto;
+    padding: 0 10px;
+    max-width: 1150px;
 }
 
 li {
@@ -32,6 +34,6 @@ li {
 
 @media screen and (min-width: 768px) {
     .container {
-        margin: 0 20px;
+        padding: 0 20px;
     }
 }

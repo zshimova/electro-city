@@ -76,9 +76,12 @@
     display: flex;
     margin-top: 24px;
   }
-  .search .tablet .icons {
+  .search .tablet__icons {
     display: flex;
     gap: 30px;
+  }
+  .search .tablet__icons_icon span {
+    display: none;
   }
   .search__container {
     gap: 0;
@@ -99,5 +102,35 @@
   }
   .search .slider__arrows {
     display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .search {
+    margin: 0 0 36px;
+  }
+  .search .tablet__icons_icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+  }
+  .search .tablet__icons_icon svg {
+    width: 18px;
+    height: 18px;
+  }
+  .search .tablet__icons_icon span {
+    display: block;
+    font-size: 16px;
+  }
+  .search__container_title {
+    font-size: 22px;
+    letter-spacing: 2.3px;
+  }
+  .search__container #search {
+    margin: 0 25px 0 45px;
+    padding: 10px 18px 11px 51px;
+  }
+  .search__container .magnifier {
+    left: 257px;
   }
 }/*# sourceMappingURL=search.css.map */
