@@ -1,0 +1,18 @@
+.promo_title {
+  margin: 0 0 24px;
+  font-size: 24px;
+}
+.promo__container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+}
+
+@media screen and (min-width: 768px) {
+  .promo_title {
+    margin-bottom: 36px;
+    font-size: 36px;
+  }
+}/*# sourceMappingURL=promo.css.map */

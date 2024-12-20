@@ -1,0 +1,37 @@
+@import 'fonts/fonts.scss';
+@import 'header/header.scss';
+@import 'search/search.scss';
+@import 'promo/promo.scss';
+@import 'footer/footer.scss';
+
+
+:root {
+    --white: #FFFFFF;
+    --prime: #E11C4B;
+    --main: #333333;
+    --main-grey: #8D8D8D;
+    --footer: #F4F4F4;
+    --header-line: #E8E8E8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--main);
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    margin: 0 10px;
+}
+
+li {
+    list-style-type: none;
+} 
+
+@media screen and (min-width: 768px) {
+    .container {
+        margin: 0 20px;
+    }
+}

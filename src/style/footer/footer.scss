@@ -1,0 +1,137 @@
+.footer {
+    margin-top: 48px;
+    background-color: var(--footer);
+    font-size: 14px;
+    line-height: 22px;
+
+    & .container {
+        padding: 24px 0;
+        gap: 18px;
+    }
+
+    & .container,
+    &__nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__nav-items {
+        display: flex;
+        gap: 25px;
+
+        &_item {
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__contacts {
+
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &_phone,
+        &_mail {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            text-decoration: none;
+        }
+
+        &_mail {
+
+            & img {
+                width: 20px;
+                height: 11px;
+            }
+        }
+    }
+
+    &__social-links {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        &_link {
+            background-color: var(--white);
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid var(--main-grey);
+        }
+    }
+
+    &__copyright {
+        margin-top: 24px;
+        font-size: 12px;
+        color: var(--main-grey);
+    }
+}
+
+
+@media screen and (min-width: 768px) {
+    .footer {
+        font-size: 16px;
+        line-height: auto;
+
+        .container {
+            position: relative;
+            display: block;
+            padding-top: 36px;
+        }
+
+        &__contacts {
+            margin-top: 24px;
+            flex-direction: row;
+            gap: 24px;
+
+            &_phone,
+            &_mail {
+                gap: 10px;
+            }
+
+            &_phone {
+
+                & img {
+                    width: 19px;
+                    height: 19px;
+                }
+            }
+
+            &_mail {
+
+                & img {
+                    width: 26px;
+                    height: 17px;
+                }
+            }
+        }
+
+        &__social-links {
+            position: absolute;
+            right: 0;
+            top: 36px;
+
+            &_link {
+                width: 40px;
+                height: 40px;
+
+                & img {
+                    width: 24px;
+                    height: 24px;
+                }
+            }
+        }
+
+        &__copyright {
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}

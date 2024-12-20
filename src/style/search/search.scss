@@ -1,0 +1,136 @@
+.search {
+    margin: 0 0 24px;
+
+    &__container {
+        position: relative;
+        margin-bottom: 18px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        & .burger-btn {
+            background-color: transparent;
+            border: none;
+        }
+    
+        & #search {
+            padding: 11px 18px 11px 42px;
+            width: 100%;
+            color: var(--main-grey);
+            border-radius: 20px;
+            border: 2px solid #DDDDDD;
+        }
+    
+        & .magnifier {
+            position: absolute;
+            left: 57px;
+        }
+    }
+
+    &  .tablet {
+        display: none;
+    }
+
+    
+
+    & .slider {
+        position: relative;
+        padding: 0;
+        overflow: hidden;
+
+        & .slides,
+        &__slide {
+            display: flex;
+            align-items: center;
+        }
+
+        & .slides {
+            gap: 18px;
+            overflow-x: scroll
+        }
+
+        & .slides::-webkit-scrollbar { 
+            width: 0; 
+        }
+
+        &__slide {
+            display: flex;
+            gap: 6px;
+
+            & span {
+                white-space: nowrap
+            }
+        }
+
+        &__arrows {
+
+            & .prev,
+            & .next {
+                border: none;
+                background-color: transparent;
+            }
+
+            & .prev {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 18px;
+                height: 18px;
+            }
+
+            & .next {
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 18px;
+                height: 18px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .search {
+
+        & .mobile {
+            display: none;
+        }
+
+        & .tablet {
+            display: flex;
+            margin-top: 24px;
+
+            & .icons {
+                display: flex;
+                gap: 30px;
+            }
+        }
+
+        &__container {
+            gap: 0;
+
+            &_title {
+                font-size: 18.32px;
+                letter-spacing: 1.9px;
+                color: var(--prime);
+            }
+
+            & #search {
+                margin: 0 35px 0 45px;
+                padding: 10px 18px 11px 50px;
+            }
+
+            & .magnifier {
+                left: 220px;
+                width: 26px;
+                height: 26px;
+            }
+        }
+
+        & .slider {
+            &__arrows {
+                display: none;
+            }
+        }
+    }
+}
